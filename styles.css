@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.5rem;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    background-color: #E6EFF6;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+main {
+    width: min(90%, 23.4375rem);
+    box-sizing: border-box;
+    background-color: #fff;
+    border-radius: .2rem;
+    display: block;
+    margin-inline: auto;
+    display: grid;
+    margin-top: 1rem;
+}
+
+section {
+    padding: 2rem;
+}
+
+h1 {
+    color: hsl(179, 62%, 43%);
+}
+
+h1, h2 {    
+    margin-bottom: 1rem;
+}
+
+ h2 {
+    font-size: 1.2rem;
+ }
+
+.join h2 {
+    color: hsl(71, 73%, 54%);
+}
+
+.join p {
+    color: hsl(218, 22%, 67%);
+}
+
+.subscription {
+    background-color: hsl(179, 62%, 43%);
+}
+
+.subscription h2, .subscription div {
+    color: #fff;
+}
+
+.subscription div {
+    display: flex;
+    align-content: center;
+    gap: .5rem;
+}
+
+.sub-amount div {
+    font-size: 2rem;
+    margin-bottom: .5rem;
+}
+
+.sub-amount span {
+    font-size: .8rem;
+}
+
+.sub-amount span, .subscription p {
+    color: hsl(204, 43%, 93%);
+}
+
+.subscription a {
+    width: 100%;
+    background-color: hsl(71, 73%, 54%);
+    display: block;
+    padding: .7rem;
+    margin-top: 1.5rem;
+    text-align: center;
+    text-decoration: none;
+    color: hsl(204, 43%, 93%);
+    border-radius: .3rem;
+    padding: 10px;
+    box-shadow: 1px 2px 10px #8787875a;
+}
+
+.why-us {
+    background-color: #4ABEBD;
+}
+
+.why-us h2 {
+    color: #fff;
+}
+
+.why-us a {
+    display: block;
+    text-decoration: none;
+    color: hsl(204, 43%, 93%);
+}
+
+.why-us a:hover {
+    color: hsl(179, 92%, 14%);
+}
+
+footer a {
+    text-decoration: none;
+    color: hsl(179, 86%, 50%);
+}
+
+footer a:hover {
+    font-size: larger;
+    color: hsl(179, 92%, 14%);
+}
+
+footer {
+    text-align: center;
+    background-color: #E6EFF6;
+    width: 100%;
+}
+
+@media screen and (min-width:47.5rem) {
+        
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: min(90%, 40rem);
+    }
+
+    .join {
+        grid-column: span 2;
+    }
+
+    footer {
+        grid-column: span 2;
+    }
+}
